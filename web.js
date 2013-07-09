@@ -2,7 +2,7 @@ var fs = require('fs')
 
 var index = fs.readFileSync('index.html');
 var buffer = new Buffer(16);
-buffer.write(index , "utf-8");
+buffer.write(index);
 var index2 = buffer.toString("utf-8");
 var express = require('express');
 

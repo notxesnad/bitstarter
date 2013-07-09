@@ -1,11 +1,8 @@
 var fs = require('fs');
 
-var index = fs.readFileSync('index.html', 'utf-8');
+//var index = fs.readFileSync('index.html', 'utf-8');
 
-var index2 = fs.readFileSync('index.html', 'utf-8');
-
-buf = new Buffer(28);
- buf.write(index2,0);
+var index2 = fs.readFileSync('index.html');
 tindex2 = buf.toString('utf-8');
 
 var express = require('express');
